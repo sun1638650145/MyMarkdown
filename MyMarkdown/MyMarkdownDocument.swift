@@ -16,13 +16,13 @@ extension UTType {
 
 struct MyMarkdownDocument: FileDocument {
     var text: String
-
+    
     init(text: String = "Hello, world!") {
         self.text = text
     }
-
+    
     static var readableContentTypes: [UTType] { [.exampleText] }
-
+    
     init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,
               let string = String(data: data, encoding: .utf8)
