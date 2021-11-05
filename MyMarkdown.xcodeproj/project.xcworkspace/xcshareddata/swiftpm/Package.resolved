@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Down",
+        "repositoryURL": "/Users/sunruiqi/Desktop/Down",
+        "state": {
+          "branch": null,
+          "revision": "0bcd20dc56ad7fd47bbb99a1d2302a8bfa43b6d0",
+          "version": "0.10.0"
+        }
+      },
+      {
+        "package": "SwiftDown",
+        "repositoryURL": "/Users/sunruiqi/Desktop/SwiftDown",
+        "state": {
+          "branch": null,
+          "revision": "f2879f474d4015548a99686fa97652cf9f3fe1a0",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

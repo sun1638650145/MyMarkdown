@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+import SwiftDown
+
 struct Editor: View {
     @Binding var document: MyMarkdownDocument
     @State private var toolbarStatus = true /* 用于标记统计模式选项. */
     
     var body: some View {
-        TextEditor(text: $document.text)
+        // 添加对Markdown文本的渲染.
+        SwiftDownEditor(text: $document.text)
+            .theme(Theme.BuiltIn.defaultLight.theme())
             .toolbar {
                 ToolbarItem(placement: .navigation) {
                     Button(action: { toolbarStatus = !toolbarStatus }) {
