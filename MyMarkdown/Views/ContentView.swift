@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import Ink
 
 struct ContentView: View {
     @Binding var document: MyMarkdownDocument
+    var html: String {
+        let _parser = MarkdownParser()
+        return _parser.html(from: document.text)
+    }
     
     var body: some View {
-        // 添加文本编辑器组件.
-        Editor(document: $document)
+        HStack {
+            // 添加文本编辑器组件.
+            MarkdownEditor(document: $document)
+            // 添加文本渲染器组件.
+            MarkdownView(html: html)
+        }
     }
 }
 

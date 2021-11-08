@@ -17,7 +17,7 @@ extension UTType {
 struct MyMarkdownDocument: FileDocument {
     var text: String
     
-    init(text: String = "Hello, world!") {
+    init(text: String = "# Hello, World!") {
         self.text = text
     }
     

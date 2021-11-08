@@ -14,7 +14,9 @@
 		39716DE6270A988E007C2FCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE5270A988E007C2FCF /* ContentView.swift */; };
 		39716DE8270A988F007C2FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DE7270A988F007C2FCF /* Assets.xcassets */; };
 		39716DEB270A988F007C2FCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DEA270A988F007C2FCF /* Preview Assets.xcassets */; };
-		39716DF5270A9AFC007C2FCF /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DF4270A9AFC007C2FCF /* Editor.swift */; };
+		39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */; };
+		39E98A262738FE6F00334E0F /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 39E98A252738FE6F00334E0F /* Ink */; };
+		39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E98A2B2739006F00334E0F /* MarkdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,8 @@
 		39716DE7270A988F007C2FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39716DEA270A988F007C2FCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39716DEC270A988F007C2FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39716DF4270A9AFC007C2FCF /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
+		39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditor.swift; sourceTree = "<group>"; };
+		39E98A2B2739006F00334E0F /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E98A262738FE6F00334E0F /* Ink in Frameworks */,
 				396D5A0327350981005AF588 /* SwiftDown in Frameworks */,
 				396D5A0027350976005AF588 /* Down in Frameworks */,
 			);
@@ -90,7 +94,8 @@
 		39716DF3270A9AB7007C2FCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				39716DF4270A9AFC007C2FCF /* Editor.swift */,
+				39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */,
+				39E98A2B2739006F00334E0F /* MarkdownView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			packageProductDependencies = (
 				396D59FF27350976005AF588 /* Down */,
 				396D5A0227350981005AF588 /* SwiftDown */,
+				39E98A252738FE6F00334E0F /* Ink */,
 			);
 			productName = MyMarkdown;
 			productReference = 39716DDE270A988E007C2FCF /* MyMarkdown.app */;
@@ -146,6 +152,7 @@
 			packageReferences = (
 				396D59FE27350976005AF588 /* XCRemoteSwiftPackageReference "Down" */,
 				396D5A0127350981005AF588 /* XCRemoteSwiftPackageReference "SwiftDown" */,
+				39E98A242738FE6F00334E0F /* XCRemoteSwiftPackageReference "Ink" */,
 			);
 			productRefGroup = 39716DDF270A988E007C2FCF /* Products */;
 			projectDirPath = "";
@@ -175,7 +182,8 @@
 			files = (
 				39716DE2270A988E007C2FCF /* MyMarkdownApp.swift in Sources */,
 				39716DE4270A988E007C2FCF /* MyMarkdownDocument.swift in Sources */,
-				39716DF5270A9AFC007C2FCF /* Editor.swift in Sources */,
+				39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */,
+				39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */,
 				39716DE6270A988E007C2FCF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +411,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		39E98A242738FE6F00334E0F /* XCRemoteSwiftPackageReference "Ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/sunruiqi/Desktop/Ink";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -415,6 +431,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 396D5A0127350981005AF588 /* XCRemoteSwiftPackageReference "SwiftDown" */;
 			productName = SwiftDown;
+		};
+		39E98A252738FE6F00334E0F /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39E98A242738FE6F00334E0F /* XCRemoteSwiftPackageReference "Ink" */;
+			productName = Ink;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

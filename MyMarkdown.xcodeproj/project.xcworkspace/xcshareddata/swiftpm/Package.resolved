@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Ink",
+        "repositoryURL": "/Users/sunruiqi/Desktop/Ink",
+        "state": {
+          "branch": null,
+          "revision": "77c3d8953374a9cf5418ef0bd7108524999de85a",
+          "version": "0.5.1"
+        }
+      },
+      {
         "package": "SwiftDown",
         "repositoryURL": "/Users/sunruiqi/Desktop/SwiftDown",
         "state": {
