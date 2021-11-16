@@ -9,7 +9,7 @@ import SwiftUI
 import Ink
 
 struct ContentView: View {
-    @Binding var document: MyMarkdownDocument
+    @Binding var document: MarkdownDocument
     @State private var toolbarStatus = true /* 用于标记统计模式选项. */
     
     var html: String {
@@ -68,9 +68,12 @@ struct ContentView: View {
                     UIGraphicsEndPDFContext()
                     
                     // 保存PDF文件.
-                    // TODO: 1. 实现保存到iCloud 2. 提示保存成功 3. 实现自定义文件名
+                    // TODO: 1. 提示保存成功 2. 实现自定义文件名
                     let filePath:String = NSHomeDirectory() + "/Documents/export.pdf"
                     pdfData.write(toFile: filePath, atomically: true)
+                    
+                    print("导出成功.")
+                    print(filePath)
                 }) {
                     HStack {
                         Text("导出PDF")
@@ -88,7 +91,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         // 配置iPad横屏模式.
         if #available(iOS 15, *) {
-            ContentView(document: .constant(MyMarkdownDocument()))
+            ContentView(document: .constant(MarkdownDocument()))
                 .previewInterfaceOrientation(.landscapeRight)
         }
     }

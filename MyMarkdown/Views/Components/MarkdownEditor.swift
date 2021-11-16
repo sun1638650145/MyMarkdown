@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftDown
 
 struct MarkdownEditor: View {
-    @Binding var document: MyMarkdownDocument
+    @Binding var document: MarkdownDocument
     
     var body: some View {
         // 添加对Markdown文本的渲染.
@@ -19,7 +19,7 @@ struct MarkdownEditor: View {
 }
 
 struct Editor_Previews: PreviewProvider {
-    static let doc = MyMarkdownDocument(text: "在此处输入Markdown源码.")
+    static let doc = MarkdownDocument(text: "在此处输入Markdown源码.")
     // 预览文本编辑器.
     static var previews: some View {
         MarkdownEditor(document: .constant(doc))

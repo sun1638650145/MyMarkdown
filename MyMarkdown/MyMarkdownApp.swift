@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MyMarkdownApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: MyMarkdownDocument()) { file in
+        DocumentGroup(newDocument: MarkdownDocument()) { file in
             ContentView(document: file.$document)
         }
     }

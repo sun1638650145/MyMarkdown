@@ -1,5 +1,5 @@
 //
-//  MyMarkdownDocument.swift
+//  MarkdownDocument.swift
 //  MyMarkdown
 //
 //  Created by 孙瑞琦 on 2021/10/4.
@@ -9,19 +9,18 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension UTType {
-    static var exampleText: UTType {
-        UTType(importedAs: "com.example.plain-text")
-    }
+    // 支持的导入文件类型.
+    static let markdownDocument = UTType(importedAs: "com.sunruiqi.MyMarkdown.md")
 }
 
-struct MyMarkdownDocument: FileDocument {
+struct MarkdownDocument: FileDocument {
     var text: String
     
     init(text: String = "# Hello, World!") {
         self.text = text
     }
     
-    static var readableContentTypes: [UTType] { [.exampleText] }
+    static var readableContentTypes: [UTType] { [.markdownDocument] }
     
     init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,

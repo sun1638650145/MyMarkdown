@@ -10,7 +10,7 @@
 		396D5A0027350976005AF588 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 396D59FF27350976005AF588 /* Down */; };
 		396D5A0327350981005AF588 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 396D5A0227350981005AF588 /* SwiftDown */; };
 		39716DE2270A988E007C2FCF /* MyMarkdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */; };
-		39716DE4270A988E007C2FCF /* MyMarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE3270A988E007C2FCF /* MyMarkdownDocument.swift */; };
+		39716DE4270A988E007C2FCF /* MarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE3270A988E007C2FCF /* MarkdownDocument.swift */; };
 		39716DE6270A988E007C2FCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE5270A988E007C2FCF /* ContentView.swift */; };
 		39716DE8270A988F007C2FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DE7270A988F007C2FCF /* Assets.xcassets */; };
 		39716DEB270A988F007C2FCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DEA270A988F007C2FCF /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		39716DDE270A988E007C2FCF /* MyMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMarkdownApp.swift; sourceTree = "<group>"; };
-		39716DE3270A988E007C2FCF /* MyMarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMarkdownDocument.swift; sourceTree = "<group>"; };
+		39716DE3270A988E007C2FCF /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
 		39716DE5270A988E007C2FCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39716DE7270A988F007C2FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39716DEA270A988F007C2FCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */,
-				39716DE3270A988E007C2FCF /* MyMarkdownDocument.swift */,
+				39716DE3270A988E007C2FCF /* MarkdownDocument.swift */,
 				39716DF2270A98C1007C2FCF /* Views */,
 				39716DE7270A988F007C2FCF /* Assets.xcassets */,
 				39716DEC270A988F007C2FCF /* Info.plist */,
@@ -147,6 +147,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 39716DD5270A988E007C2FCF;
 			packageReferences = (
@@ -181,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39716DE2270A988E007C2FCF /* MyMarkdownApp.swift in Sources */,
-				39716DE4270A988E007C2FCF /* MyMarkdownDocument.swift in Sources */,
+				39716DE4270A988E007C2FCF /* MarkdownDocument.swift in Sources */,
 				39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */,
 				39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */,
 				39716DE6270A988E007C2FCF /* ContentView.swift in Sources */,
