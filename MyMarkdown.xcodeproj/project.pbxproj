@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		394E5CED27462FFE004561C8 /* FileExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E5CEC27462FFE004561C8 /* FileExport.swift */; };
 		396D5A0027350976005AF588 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 396D59FF27350976005AF588 /* Down */; };
 		396D5A0327350981005AF588 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 396D5A0227350981005AF588 /* SwiftDown */; };
 		39716DE2270A988E007C2FCF /* MyMarkdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394E5CEC27462FFE004561C8 /* FileExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExport.swift; sourceTree = "<group>"; };
 		39716DDE270A988E007C2FCF /* MyMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMarkdownApp.swift; sourceTree = "<group>"; };
 		39716DE3270A988E007C2FCF /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394E5CEE27463398004561C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				394E5CEC27462FFE004561C8 /* FileExport.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		39716DD5270A988E007C2FCF = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 			children = (
 				39716DE1270A988E007C2FCF /* MyMarkdownApp.swift */,
 				39716DE3270A988E007C2FCF /* MarkdownDocument.swift */,
+				394E5CEE27463398004561C8 /* Controller */,
 				39716DF2270A98C1007C2FCF /* Views */,
 				39716DE7270A988F007C2FCF /* Assets.xcassets */,
 				39716DEC270A988F007C2FCF /* Info.plist */,
@@ -147,7 +158,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 			);
 			mainGroup = 39716DD5270A988E007C2FCF;
 			packageReferences = (
@@ -186,6 +196,7 @@
 				39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */,
 				39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */,
 				39716DE6270A988E007C2FCF /* ContentView.swift in Sources */,
+				394E5CED27462FFE004561C8 /* FileExport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
