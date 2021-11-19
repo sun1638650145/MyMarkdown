@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MyMarkdown
+
+  Created by 孙瑞琦 on 2021/11/19.
+  
+*/
+
+
+"character" = "字符";
+"exportPDF" = "导出PDF";
+"line" = "行";
+"welcomeMessage" = "# 你好，世界！";

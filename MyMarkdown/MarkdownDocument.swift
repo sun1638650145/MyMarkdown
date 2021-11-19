@@ -16,7 +16,7 @@ extension UTType {
 struct MarkdownDocument: FileDocument {
     var text: String
     
-    init(text: String = "# Hello, World!") {
+    init(text: String = NSLocalizedString("welcomeMessage", comment: "Welcome message.")) {
         self.text = text
     }
     

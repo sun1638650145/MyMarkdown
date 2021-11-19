@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyMarkdown
+
+  Created by 孙瑞琦 on 2021/11/19.
+  
+*/
+
+"character" = "Characters";
+"exportPDF" = "export PDF file";
+"line" = "Lines";
+"welcomeMessage" = "# Hello, World!";

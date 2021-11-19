@@ -29,13 +29,15 @@ struct ContentView: View {
                 Button(action: { toolbarStatus = !toolbarStatus }) {
                     // 用于显示文本统计信息.
                     if toolbarStatus {
-                        Text("\(document.text.count) 字符")
+                        Text("\(document.text.count) " +
+                             "\(NSLocalizedString("character", comment: "Number of characters in the file."))")
                             .foregroundColor(.gray)
                             .font(.system(size: 12))
                     } else {
                         // 通过过滤换行符数量计算行数.
                         let lines = (document.text.filter() { $0 == "\n" }).count + 1
-                        Text("\(lines) 行")
+                        Text("\(lines) " +
+                             "\(NSLocalizedString("line", comment: "Number of lines in the file."))")
                             .foregroundColor(.gray)
                             .font(.system(size: 12))
                     }
@@ -45,7 +47,7 @@ struct ContentView: View {
                     fileExport(html: html)
                 }) {
                     HStack {
-                        Text("导出PDF")
+                        Text("\(NSLocalizedString("exportPDF", comment: "Export PDF file."))")
                         Image(systemName: "arrow.down.circle.fill")
                     }
                     .foregroundColor(.blue)
