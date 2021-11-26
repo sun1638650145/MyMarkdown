@@ -5,6 +5,7 @@
 //  Created by 孙瑞琦 on 2021/11/18.
 //
 
+import OSLog
 import SwiftUI
 
 func fileExport(html: String) {
@@ -39,6 +40,6 @@ func fileExport(html: String) {
     let filePath:String = NSHomeDirectory() + "/Documents/export.pdf"
     pdfData.write(toFile: filePath, atomically: true)
     
-    print("导出成功.")
-    print(filePath)
+    os_log("导出成功.", type: .info)
+    os_log("%@", type: .info, filePath)
 }
