@@ -42,17 +42,8 @@ struct ContentView: View {
                             .font(.system(size: 12))
                     }
                 }
-                Button(action: {
-                    // 导出PDF文件.
-                    fileExport(html: html)
-                }) {
-                    HStack {
-                        Text("\(NSLocalizedString("exportPDF", comment: "Export PDF file."))")
-                        Image(systemName: "arrow.down.circle.fill")
-                    }
-                    .foregroundColor(.blue)
-                    .font(.system(size: 12))
-                }
+                // 添加工具栏菜单组件.
+                ToolbarMenu(html: html)
             }
         }
     }

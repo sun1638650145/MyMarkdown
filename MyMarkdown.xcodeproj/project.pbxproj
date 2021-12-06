@@ -20,6 +20,7 @@
 		39716DE8270A988F007C2FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DE7270A988F007C2FCF /* Assets.xcassets */; };
 		39716DEB270A988F007C2FCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39716DEA270A988F007C2FCF /* Preview Assets.xcassets */; };
 		39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */; };
+		397BC815275DF53500CFCB0E /* ToolbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BC814275DF53500CFCB0E /* ToolbarMenu.swift */; };
 		39E98A262738FE6F00334E0F /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 39E98A252738FE6F00334E0F /* Ink */; };
 		39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E98A2B2739006F00334E0F /* MarkdownView.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		39716DEA270A988F007C2FCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39716DEC270A988F007C2FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditor.swift; sourceTree = "<group>"; };
+		397BC814275DF53500CFCB0E /* ToolbarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarMenu.swift; sourceTree = "<group>"; };
 		39E98A2B2739006F00334E0F /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				39716DF4270A9AFC007C2FCF /* MarkdownEditor.swift */,
 				39E98A2B2739006F00334E0F /* MarkdownView.swift */,
+				397BC814275DF53500CFCB0E /* ToolbarMenu.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				39716DE2270A988E007C2FCF /* MyMarkdownApp.swift in Sources */,
 				39716DE4270A988E007C2FCF /* MarkdownDocument.swift in Sources */,
 				39716DF5270A9AFC007C2FCF /* MarkdownEditor.swift in Sources */,
+				397BC815275DF53500CFCB0E /* ToolbarMenu.swift in Sources */,
 				39E98A2C2739006F00334E0F /* MarkdownView.swift in Sources */,
 				39716DE6270A988E007C2FCF /* ContentView.swift in Sources */,
 				394E5CED27462FFE004561C8 /* FileExport.swift in Sources */,
