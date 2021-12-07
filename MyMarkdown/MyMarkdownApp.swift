@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyMarkdownApp: App {
+    var envStatus = EnvStatus()
+    
     var body: some Scene {
         DocumentGroup(newDocument: MarkdownDocument()) { file in
             ContentView(document: file.$document)
+                .environmentObject(envStatus)
         }
     }
 }

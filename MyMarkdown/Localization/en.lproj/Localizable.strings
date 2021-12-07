@@ -7,6 +7,8 @@
 */
 
 "character" = "Characters";
-"exportPDF" = "export PDF file";
+"editMode" = "Edit";
+"exportPDF" = "Export PDF file";
+"fullScreenPreviewMode" = "Full screen preview";
 "line" = "Lines";
 "welcomeMessage" = "# Hello, World!";

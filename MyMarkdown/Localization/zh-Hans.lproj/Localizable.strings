@@ -8,6 +8,8 @@
 
 
 "character" = "字符";
+"editMode" = "编辑";
 "exportPDF" = "导出PDF";
+"fullScreenPreviewMode" = "全屏预览";
 "line" = "行";
 "welcomeMessage" = "# 你好，世界！";
